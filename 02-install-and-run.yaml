@@ -2,13 +2,13 @@
   hosts: frontend
   become: yes
   tasks:
-  - name: install zip
+  - name: install 
     ansible.builtin.package:
-      name: zip
+      name: nginx
       state: present
 
-  - name: start zip
+  - name: start 
     ansible.builtin.service:
-      name: zip
+      name: nginx
       state: started
       enabled: yes
