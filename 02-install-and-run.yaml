@@ -1,0 +1,14 @@
+- name: install and start the packages
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: install zip
+      ansible.builtin.package:
+       name: zip
+       state: installed
+
+  - name: start zip
+      ansible.buitin.package:
+       name: zip
+       state: started
+       enabled: yes
