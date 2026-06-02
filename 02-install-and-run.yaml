@@ -5,7 +5,7 @@
   - name: install zip
       ansible.builtin.packages:
        name: zip
-       state: installed
+       state: present
 
   - name: start zip
       ansible.buitin.packages:
