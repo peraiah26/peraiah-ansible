@@ -8,7 +8,7 @@
       state: present
 
   - name: start zip
-    ansible.buitin.service:
+    ansible.builtin.service:
       name: zip
       state: started
       enabled: yes
