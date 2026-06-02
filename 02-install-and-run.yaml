@@ -3,12 +3,12 @@
   become: yes
   tasks:
   - name: install zip
-      ansible.builtin.package:
+      ansible.builtin.packages:
        name: zip
        state: installed
 
   - name: start zip
-      ansible.buitin.package:
+      ansible.buitin.packages:
        name: zip
        state: started
        enabled: yes
