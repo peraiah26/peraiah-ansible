@@ -4,11 +4,11 @@
   tasks:
   - name: install zip
       ansible.builtin.package:
-       name: zip
-       state: present
+        name: zip
+        state: present
 
   - name: start zip
       ansible.buitin.service:
-       name: zip
-       state: started
-       enabled: yes
+        name: zip
+        state: started
+        enabled: yes
