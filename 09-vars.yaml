@@ -1,7 +1,7 @@
 - name: variables in conditions
   hosts: local
   connection: local
-  vasr:
+  vars:
     NUMBER: 7
 
   tasks:
