@@ -1,0 +1,10 @@
+- name: variables in conditions
+  hosts: local
+  connections: local
+  vasr:
+    NUMBER: 7
+
+  tasks:
+  - name: less than or not
+    ansible.builtin.debug:
+      msg: "Given numver is {{ NUMBER }} less than 10"
