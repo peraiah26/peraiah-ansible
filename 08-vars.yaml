@@ -2,17 +2,17 @@
   hosts: local
   connection: local
   vars:
-    cousre: "devops with aws"
-    duration: 120
-    boolen: true
-    tools:
+    COURSE: "devops with aws"
+    DURATION: 120
+    BOOLEN: true
+    TOOLS:
     - "linux"
     - python
     - java
-    concepts:
+    CONCEPTS:
       cloud: aws
       cm: ansible
   tasks:
   - name: print the information
     ansible.builtin.debug:
-      msg: "course is: {{ course }}, duration: {{ duration }}, tools are: {{ tools }}, concepts: {{ concepts }}"
+      msg: "course is: {{ COURSE }}, duration: {{ DURATION }}, tools are: {{ TOOLS }}, concepts: {{ CONCEPTS }}"
