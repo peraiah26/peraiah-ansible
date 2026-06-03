@@ -6,8 +6,8 @@
     prompt: what is your name?
     private: false
 
-  - name: password
-    prompt: enter the password:
+  - name: "password"
+    prompt: enter the password?
     private: true
 
   tasks:
