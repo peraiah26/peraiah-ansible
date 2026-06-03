@@ -7,5 +7,5 @@
     TRAINER: peraiah
   tasks:
   - name: print the course information
-    ansible.builtin.debud:
+    ansible.builtin.debug:
       msg: "course name is: {{ COURSE }}, duration: {{ DURATION }}, trainer: {{ TRAINER }}"
